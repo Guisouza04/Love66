@@ -104,16 +104,16 @@ body {
 .frame {
   display: flex;
   flex-flow: column;
-  padding: 10px;
+  padding: 1rem;
   border: 2px solid #03212b;
-  border-radius: 10px;
+  border-radius: 1rem;
   background: #082040ff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 img {
-  width: 300px;
-  height: 300px;
+  width: 30rem;
+  height: 30rem;
   object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
