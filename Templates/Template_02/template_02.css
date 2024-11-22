@@ -30,29 +30,16 @@ body {
   padding: 2.5rem;
 }
 
+.First_frase p {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+.First_frase {
+  max-width: 60rem;
+}
+
 #timer {
   font-size: 1.8rem;
   text-align: center;
   color: #f1f1f1;
-}
-
-.First_foto {
-  background-image: url(../../imagens/WhatsApp\ Image\ 2024-11-21\ at\ 20.09.21_103bd39b.jpg);
-  background-position: 50%;
-  background-size: cover;
-  border-radius: 1rem;
-  width: 26.0rem;
-  height: 20.0rem;
-  position: relative;
-}
-
-.First_frase p {
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-#spotify {
-  width: 26.0rem;
-  position: absolute;
-  bottom: 0;
 }
