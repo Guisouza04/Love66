@@ -157,3 +157,54 @@ const FrameSpotifyPlaylist = {
     card.classList.toggle('virada');
   }
   
+
+
+
+  // Carrossel 
+  const carouselTrack = document.querySelector('.carousel-track');
+let startX = 0; // Posição inicial do toque
+let currentTranslate = 0; // Posição atual
+let prevTranslate = 0; // Posição anterior
+let animationID = 0; // ID da animação
+let currentIndex = 0; // Índice do item atual
+
+// Eventos de toque
+carouselTrack.addEventListener('touchstart', startTouch);
+carouselTrack.addEventListener('touchmove', moveTouch);
+carouselTrack.addEventListener('touchend', endTouch);
+
+function startTouch(e) {
+  startX = e.touches[0].clientX; // Captura a posição inicial do toque
+  prevTranslate = currentTranslate; // Salva a posição anterior
+  cancelAnimationFrame(animationID); // Cancela animações em andamento
+}
+
+function moveTouch(e) {
+  const currentX = e.touches[0].clientX; // Captura a posição atual do toque
+  const deltaX = currentX - startX; // Diferença entre toque inicial e atual
+  currentTranslate = prevTranslate + deltaX; // Atualiza a posição do carrossel
+  setCarouselPosition();
+}
+
+function endTouch() {
+  // Calcula o índice com base na direção do deslizar
+  const movedBy = currentTranslate - prevTranslate;
+  if (movedBy < -50 && currentIndex < document.querySelectorAll('.carousel-item').length - 1) {
+    currentIndex++; // Próximo slide
+  } else if (movedBy > 50 && currentIndex > 0) {
+    currentIndex--; // Slide anterior
+  }
+
+  // Ajusta para o slide correto
+  setPositionByIndex();
+}
+
+function setCarouselPosition() {
+  carouselTrack.style.transform = `translateX(${currentTranslate}px)`;
+}
+
+function setPositionByIndex() {
+  currentTranslate = -currentIndex * window.innerWidth;
+  prevTranslate = currentTranslate;
+  carouselTrack.style.transform = `translateX(${currentTranslate}px)`;
+}
