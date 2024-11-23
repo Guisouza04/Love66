@@ -128,3 +128,32 @@ document.addEventListener('DOMContentLoaded', () => {
   // Renderiza o componente no contêiner com ID "frameSpotify"
   frameSpotify.render('.FrameSpotify');
 });
+
+// Quadro Spotify com playlist
+const FrameSpotifyPlaylist = {
+  html: `<div class="frame">
+      <img src="../../imagens/WhatsApp Image 2024-11-21 at 20.09.21_103bd39b.jpg" alt="Foto Casal">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EMvu5Aq7PTApUq7WLjKcn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    `,
+    render: function (container) {
+      // Adicionar CSS ao cabeçalho
+      const style = document.createElement('style');
+      style.textContent = this.css;
+      document.head.appendChild(style);
+  
+      // Adicionar HTML ao contêiner
+      document.querySelector(container).innerHTML = this.html;
+    }
+  };
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    // Renderiza o componente no contêiner com a Classe "SpotifyFrame"
+    FrameSpotifyPlaylist.render('.SpotifyFrame');
+  });
+
+  function virarCarta() {
+    const card = document.querySelector('.card');
+    card.classList.toggle('virada');
+  }
+  
