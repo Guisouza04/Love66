@@ -158,7 +158,3 @@ const FrameSpotifyPlaylist = {
   }
   
 
-
-
-  // Carrossel 
-
