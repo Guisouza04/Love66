@@ -160,7 +160,7 @@ const floatingHearts = {
   background-color: #f20044;
   transform: rotate(-45deg);
   border-radius: 0;
-  animation: float-up 2s ease-out forwards;
+  animation: float-up 2.5s ease-out forwards;
 }
 
 .floating-heart::before,
@@ -187,13 +187,29 @@ const floatingHearts = {
   0% {
     opacity: 1;
     transform: translateY(0) scale(1) rotate(-45deg);
-  }
+  } 
   100% {
     opacity: 0;
-    transform: translateY(-150px) scale(0.5) rotate(-45deg);
+    transform: translateY(-500px) scale(0.5) rotate(-45deg);
+  }
+  @media screen and (max-width: 480px) {
+  .floating-heart {
+    width: 1.5rem;
+    height: 1.5rem;
+    animation: float-up 1.8s ease-out forwards;
+  }
+
+  .Heart {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .Heart::before,
+  .Heart::after {
+    height: 5rem;
+    width: 5rem;
   }
 }
-
   `,
   render: function (container) {
     // Adicionar CSS ao cabeçalho
@@ -206,17 +222,22 @@ const floatingHearts = {
   },
   spawnHearts: function () {
     const container = document.body; // Onde os corações serão adicionados
+
+    const heartElement = document.querySelector('.Heart');
+    const rect = heartElement.getBoundingClientRect();
+    const startY = rect.top + window.scrollY;
     for (let i = 0; i < 10; i++) {
       const heart = document.createElement('div');
       heart.classList.add('floating-heart');
+      const randomOffset = Math.random() * -200;
       heart.style.left = `${Math.random() * 100}vw`;
-      heart.style.top = `${window.innerHeight - 100}px`; // Começa no final da tela
+      heart.style.top = `${startY + randomOffset}px`; // Começa no final da tela
       container.appendChild(heart);
 
       // Remover o coração após a animação
       setTimeout(() => {
         container.removeChild(heart);
-      }, 20000);
+      }, 2000);
     }
   },
 };
