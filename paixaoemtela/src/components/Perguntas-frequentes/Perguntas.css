@@ -1,0 +1,35 @@
+.container-perguntas-frequentes{
+    
+    background-color: #D7B988;
+   margin: 50px;
+    
+}
+
+.container-perguntas-frequentes h1{
+    text-align: center;
+}
+
+.container-perguntas{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+.box-perguntas{
+    width:  1000px ;
+    padding: 20px;
+    background-color: #C1A26F;
+    margin: 15px;
+    box-shadow: 0 6px 8px #554832;
+}
+    
+.box-perguntas h2{
+    font-size: 16px;
+}
+
+.box-perguntas p{
+    font-size: 14px;
+    color: wheat;
+}

@@ -1,0 +1,32 @@
+.container-principal-full{
+    height: 680px;
+    background-color:#D7B988 ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteudo{
+    width: 500px;
+    padding-top: 100px;
+    
+}
+
+.container-principal-full img{
+    width: 700px;
+    
+}
+
+.container-principal-full h1{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #89373D;
+}
+
+p{
+    font-size: 22px;
+    color: #89373D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+

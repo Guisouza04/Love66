@@ -1,0 +1,32 @@
+
+
+.box{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+    padding: 20px;
+    text-align: center;
+    background-color: #C1A26F ;
+    color: black;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px #554832;
+}
+.container-fluxo{
+
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.titulo-fluxo{
+    text-align: center;
+    padding: 50px;
+}

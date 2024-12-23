@@ -1,0 +1,27 @@
+footer{
+    background-color: #716147;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.logo-esq img{
+    width: 50px;
+}
+
+.logo-dir img{
+    width: 50px;
+}
+
+.logo-dir{
+    font-size: 14px;
+    width: 390px;
+    align-items:center ;
+    text-align: center;
+}
+
+.logo-esq{
+    width: 250px;
+    text-align: center;
+    margin-top: 50px;
+}

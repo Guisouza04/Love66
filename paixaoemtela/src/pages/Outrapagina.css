@@ -1,0 +1,14 @@
+.container-imagem{
+    background-color: aliceblue;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container-imagem img{
+    width: 300px;
+    background-size: cover;
+    border: 10px solid black;
+}
