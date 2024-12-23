@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./forms.css";
 import Button from "../button/button";
+import Timer from "../Timer/timer.jsx";
+import HeartFloating from "../Heart/HeartFloating.jsx"; 
 
 function Forms() {
   const [formData, setFormData] = useState({
@@ -84,22 +86,21 @@ function Forms() {
               </div>
 
               <div className="footer-img">
-                <img src="./public/icons/logo.svg" alt="Logo" />
-                <p>{formData.name}</p>
+                <img src="./public/icons/coracao-main.svg" alt="Logo" />
+                <p id="nomeCasal">{formData.name}</p>
               </div>
             </div>
 
             {/* Mensagem */}
             <div className="mensagem">
-              <p>{formData.textarea}</p>
+              <p id="mensagem">{formData.textarea}</p>
             </div>
 
             {/* Contador */}
             <div className="container-contador">
-              <h3>Compartilhamos momentos juntos fazem exatamente:</h3>
               <div className="contador">
-                {/* Aqui você pode calcular a diferença de datas com base em `formData.data` */}
-                <p>{formData.data ? `Desde ${formData.data}` : "Data não definida"}</p>
+                <Timer startDate={formData.data} />
+                <HeartFloating />
               </div>
             </div>
 
