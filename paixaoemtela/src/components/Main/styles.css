@@ -30,3 +30,35 @@ p{
     font-weight: bold;
 }
 
+@media (max-width: 768px){
+
+    
+    .conteudo{
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        padding-top: 50px;
+        gap: 15px;
+    }
+    .container-principal-full{
+        display: block;
+        height: 100%;
+    }
+    
+    .container-principal-full h1{
+        font-size: 22px;
+        font-weight: bold;
+        padding: 20px 0px;
+    }
+
+
+    .container-principal-full p{
+        font-size: 15px;
+        color: white;
+        padding: 20px 0px 40px 0px;
+    }
+
+    .container-principal-full img{
+        width: 100%;
+    }
+}

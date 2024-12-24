@@ -1,5 +1,6 @@
 import React from 'react'
 import './Fluxo.css'
+import Button from '../button/button'
 
 function Fluxo() {
   return (
@@ -12,7 +13,10 @@ function Fluxo() {
         <div className='box'>2. Realize o pagamento</div>
         <div className='box'>3. Receba o acesso ao seu site por QRcode no seu email</div>
         <div className='box'>4. Hora da surpresa! Entregue seu presente a pessoa que ama</div>
+        <div className='Button-fluxo'><Button /></div>
       </div>
+
+      
     </div>
   )
 }

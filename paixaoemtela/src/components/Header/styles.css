@@ -1,7 +1,7 @@
 
 .header {
 
-    background-color: #D7B988;
+    background-color: #C1A26F;
     color: #89373D;
     padding: 50px;
     text-align: center;
@@ -10,7 +10,7 @@
     justify-content: center;
     box-shadow: 0 10px 20px #89373D;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
+
     
 }
 
@@ -23,4 +23,16 @@
 
 h1 {
     margin: 0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+
+@media (max-width:768px){
+
+    .header{
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
 }

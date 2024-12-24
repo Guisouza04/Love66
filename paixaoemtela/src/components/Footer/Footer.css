@@ -25,3 +25,32 @@ footer{
     text-align: center;
     margin-top: 50px;
 }
+
+@media (max-width:768px){
+    footer{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-esq{
+        margin: 0px;
+        width: 100%;
+        padding: 50px 80px;
+    }
+
+    .logo-dir{
+        width: 100%;
+        padding: 50px;
+        
+    }
+
+    footer p{
+        font-size: 15px;
+        color: white;
+        padding: 30px 0px;
+    }
+    footer h2{
+        padding: 30px 0px;
+    }
+}

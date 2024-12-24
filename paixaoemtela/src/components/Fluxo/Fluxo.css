@@ -3,11 +3,10 @@
 .box{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    
+    font-weight: bold;
     padding: 20px;
-    text-align: center;
     background-color: #C1A26F ;
-    color: black;
+    color: #89373D;
     height: 200px;
     width: 300px;
     display: flex;
@@ -29,4 +28,34 @@
 .titulo-fluxo{
     text-align: center;
     padding: 50px;
+}
+
+@media (max-width:768px){
+
+    .container-fluxo{
+        width: 100%;
+        display: block;
+        padding: 0px;
+        gap: 15px;
+        margin: 0 auto;
+    }
+
+    .box{
+        
+        padding: 30px;
+        width: 370px;
+        font-size: 15px;
+        height: 60px;
+        margin: 15px auto;
+    }
+
+    .Button-fluxo{
+        
+    
+        font-size: 15px;
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+
+    }
 }

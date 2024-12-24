@@ -9,10 +9,10 @@ html {
 }
 
 .container-forms {
-    height: 800px;
+    
     display: flex;
-    padding: 50px;
-    background-color: #D7B988;
+    padding: 80px;
+    background-color: #C1A26F;
     justify-content: space-around;
     font-weight: bold;
     
@@ -177,4 +177,55 @@ iframe {
     max-width: 60rem;
     text-align: end;
     color: #000;
+}
+
+
+@media (max-width:768px){
+    .container-forms{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+    
+    }
+
+    .container-ao-vivo{
+        color: wheat;
+    }
+
+    input, textarea{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .container-ao-vivo{
+        width: 100%;
+        border: 5px solid #89373D;
+    }
+    .container-ao-vivo h3{
+        padding: 20px;
+        font-size: 15px;
+        font-family: 'Montserrat'
+    }
+    .container-como-fica{
+        width: 100%;
+        padding: 15px;
+        border-radius: 15px;
+        padding-bottom: 100px;
+    }
+    .container-como-fica h2{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .Button-forms{
+        text-align: center;
+        padding-top: 20px;
+    }
+    
 }

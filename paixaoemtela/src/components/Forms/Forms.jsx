@@ -64,7 +64,9 @@ function Forms() {
           <span>URL:</span>
           <input type="url" name="url" placeholder="URL" onChange={handleChange} />
         </label>
+        <div className="Button-forms">
         <Button type="submit">Enviar</Button>
+        </div>
       </form>
       {/* Simulador ao vivo */}
       <div className="container-como-fica">
