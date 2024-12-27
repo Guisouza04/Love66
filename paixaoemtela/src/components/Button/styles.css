@@ -9,9 +9,31 @@
   box-shadow: 0 6px 8px #5e1010;
   cursor: pointer;
   width: 250px;
+  transition: all 0.3s ease;
   }
   
   .my-button:hover {
-    background-color: red;
+    color: gold;
     transition: ease-in-out 0.4s;
+    transform: scale(1.1);
   }
+
+  .button-scroll {
+    background: linear-gradient(80deg, #C2A157 1%, #800F2F 40%); /* Gradiente do fundo */
+    color: white; 
+    font-size: 16px; 
+    font-weight: bold;
+    padding: 20px 40px;
+    border: none; 
+    border-radius: 15px; 
+    box-shadow: 0 6px 8px #5e1010;
+    cursor: pointer;
+    width: 250px;
+    transition: all 0.3s ease;
+    }
+    
+    .button-scroll {
+      color: gold;
+      transition: ease-in-out 0.4s;
+      transform: scale(1.1);
+    }

@@ -4,8 +4,11 @@ import "./forms.css";
 import Button from "../button/button";
 import Timer from "../Timer/timer.jsx";
 import HeartFloating from "../Heart/HeartFloating.jsx"; 
+import { useRef } from "react";
 
 function Forms() {
+
+
   const [formData, setFormData] = useState({
     name: "",
     data: "",
@@ -35,6 +38,7 @@ function Forms() {
   };
 
   return (
+
     <div className="container-forms">
       <form onSubmit={handleSubmit}>
       <h1>Preencha aqui os dados especiais sobre seu namoro!</h1>
@@ -89,7 +93,6 @@ function Forms() {
               </div>
 
               <div className="footer-img">
-                <img src="./public/icons/logo.svg" alt="Logo" />
                 <p id="nomeCasal">{formData.name}</p>
               </div>
             </div>

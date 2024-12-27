@@ -11,6 +11,12 @@ html {
     font-size: 62.5%;
 }
 
+.Button-forms .my-button{
+    width: 100%;
+    height: 50px;
+    padding: 0;
+}
+
 .container-forms {
     
     display: flex;
@@ -53,6 +59,7 @@ textarea:hover,
 .file-label:hover {
     background-color: #5F6C7D;
     transition: ease-in 0.4s;
+    border: none;
 }
 
 form {
@@ -103,6 +110,7 @@ input[type="file"] {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+    color: #5F6C7D;
 }
 
 .container-como-fica {
@@ -150,8 +158,6 @@ input[type="file"] {
 
 .footer-img {
 
-    display: flex;
-    justify-content: space-between;
     height: 50px;
     padding: 0px 20px 0px 20px;
     font-size: 5px;
@@ -162,6 +168,7 @@ input[type="file"] {
     max-width: 30rem;
     margin: 2rem auto;
     padding-bottom: 2rem;
+    color: #5F6C7D;
 }
 
 .container-contador {

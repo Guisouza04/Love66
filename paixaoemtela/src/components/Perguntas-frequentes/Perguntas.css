@@ -15,13 +15,16 @@
     justify-content: center; 
     margin: 0 auto;
     margin-top: 50px;
-    
+}
+.box-perguntas:hover{
+    transform: scale(1.05);
 }
 .box-perguntas{
     width:  1000px ;
     padding: 20px;
     margin: 15px;
     box-shadow: 0 6px 8px #554832;
+    transition: all 0.3s ease;
 }
     
 .box-perguntas h2{

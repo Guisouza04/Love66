@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './timer.css'
 
 const Timer = ({ startDate }) => {
   const [tempoDeNamoro, setTempoDeNamoro] = useState("");
