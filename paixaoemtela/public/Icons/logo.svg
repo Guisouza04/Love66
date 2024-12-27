@@ -7,8 +7,14 @@
 <metadata>
 Created by potrace 1.15, written by Peter Selinger 2001-2017
 </metadata>
+<defs>
+    <linearGradient id="myGradient" x1="0%" y1="0%" x2="40%" y2="60%">
+        <stop offset="0%" style="stop-color:#D7B988;stop-opacity:2"/>
+        <stop offset="100%" style="stop-color:#800F2F;stop-opacity:8" />
+    </linearGradient>
+</defs>
 <g transform="translate(0.000000,1113.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="url(#myGradient)" stroke="none">
 <path d="M3680 11123 c-586 -33 -1197 -198 -1698 -458 -329 -172 -589 -360
 -840 -608 -198 -195 -341 -376 -506 -636 -342 -540 -538 -1061 -613 -1626 -21
 -165 -24 -590 -5 -750 111 -910 543 -1770 1348 -2684 886 -1006 2312 -2094

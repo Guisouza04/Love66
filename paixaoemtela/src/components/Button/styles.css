@@ -1,6 +1,6 @@
 .my-button {
-  background: linear-gradient(90deg, #7b3f3f, #a64545); /* Gradiente do fundo */
-  color: #D7B988; 
+  background: linear-gradient(80deg, #C2A157 1%, #800F2F 40%); /* Gradiente do fundo */
+  color: white; 
   font-size: 16px; 
   font-weight: bold;
   padding: 20px 40px;
@@ -12,5 +12,6 @@
   }
   
   .my-button:hover {
-    background-color: red
+    background-color: red;
+    transition: ease-in-out 0.4s;
   }

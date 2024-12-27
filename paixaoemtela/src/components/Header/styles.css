@@ -1,15 +1,13 @@
 
 .header {
 
-    background-color: #C1A26F;
-    color: #89373D;
+    color: #800F2F;
     padding: 50px;
     text-align: center;
     display: flex;
     padding-left: 100px;
     justify-content: center;
-    box-shadow: 0 10px 20px #89373D;
-    position: relative;
+    align-items: center;
 
     
 }
@@ -18,7 +16,7 @@
     padding-right: 10px;
     width: 50px;
     height: 50px;
-    color: #89373D;
+
 }
 
 h1 {

@@ -5,8 +5,7 @@
     font-size: 20px;
     font-weight: bold;
     padding: 20px;
-    background-color: #C1A26F ;
-    color: #89373D;
+    color: #800F2F;
     height: 200px;
     width: 300px;
     display: flex;
@@ -19,7 +18,7 @@
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
-    gap: 20px;
+    gap: 50px;
     width: 900px;
     margin: 0 auto;
     padding: 50px;
@@ -27,7 +26,9 @@
 
 .titulo-fluxo{
     text-align: center;
-    padding: 50px;
+    padding: 30px;
+    color: #5F6C7D;
+    font-size: 20px;
 }
 
 @media (max-width:768px){
@@ -47,6 +48,7 @@
         font-size: 15px;
         height: 60px;
         margin: 15px auto;
+        text-align: center;
     }
 
     .Button-fluxo{
@@ -57,5 +59,9 @@
         text-align: center;
         padding-top: 50px;
 
+    }
+
+    .titulo-fluxo{
+        font-size: 16px;
     }
 }

@@ -1,6 +1,5 @@
 .container-principal-full{
     height: 680px;
-    background-color:#D7B988 ;
     display: flex;
     justify-content: space-around;
 }
@@ -8,24 +7,29 @@
 .conteudo{
     width: 500px;
     padding-top: 100px;
-    
+    display: block;
 }
+.conteudo p{
+    padding: 50px 0px;
+}
+
 
 .container-principal-full img{
     width: 700px;
-    
 }
-
 .container-principal-full h1{
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
-    color: #89373D;
+    background: linear-gradient(150deg, #C2A157 1%, #800F2F 40%); 
+    -webkit-background-clip: text; color: transparent;
+    
+
 }
 
 p{
     font-size: 22px;
-    color: #89373D;
+    color: #5F6C7D;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
@@ -54,11 +58,13 @@ p{
 
     .container-principal-full p{
         font-size: 15px;
-        color: white;
+        color: #5F6C7D;
         padding: 20px 0px 40px 0px;
     }
 
     .container-principal-full img{
         width: 100%;
+        padding: 50px;
+
     }
 }

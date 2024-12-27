@@ -1,56 +1,43 @@
 footer{
-    background-color: #716147;
     display: flex;
-    justify-content: space-evenly;
     color: black;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
 }
 
 .logo-esq img{
     width: 50px;
+    padding-right: 10px;
+    
 }
 
 .logo-dir img{
     width: 50px;
+    padding-left: 10px;
+    
 }
 
 .logo-dir{
-    font-size: 14px;
-    width: 390px;
-    align-items:center ;
+    align-items: center;
     text-align: center;
+    display: flex;
 }
 
 .logo-esq{
+    display: flex;
     width: 250px;
     text-align: center;
-    margin-top: 50px;
+
 }
 
 @media (max-width:768px){
-    footer{
-        display: block;
-        align-items: center;
+    .footer{
+    
         text-align: center;
-    }
-
-    .logo-esq{
-        margin: 0px;
-        width: 100%;
-        padding: 50px 80px;
-    }
-
-    .logo-dir{
-        width: 100%;
-        padding: 50px;
-        
-    }
-
-    footer p{
-        font-size: 15px;
-        color: white;
-        padding: 30px 0px;
-    }
-    footer h2{
-        padding: 30px 0px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
     }
 }

@@ -10,7 +10,7 @@ const MenuPrincipal = ()=>{
                 <Button label="Quero criar meu site"/>
             </div>
             <div className='imagem-principal'>
-                <img src="./public/icons/coracao-main.svg" alt="foto"/>
+                <img src="./public/icons/logo.svg" alt="foto"/>
             </div>
         </div>
     )

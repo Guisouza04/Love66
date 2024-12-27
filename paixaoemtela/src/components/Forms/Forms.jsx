@@ -37,6 +37,7 @@ function Forms() {
   return (
     <div className="container-forms">
       <form onSubmit={handleSubmit}>
+      <h1>Preencha aqui os dados especiais sobre seu namoro!</h1>
         <label>
           <span>Nome do casal:</span>
           <input type="text" name="name" placeholder="Nome do casal" onChange={handleChange} />
@@ -88,7 +89,7 @@ function Forms() {
               </div>
 
               <div className="footer-img">
-                <img src="./public/icons/coracao-main.svg" alt="Logo" />
+                <img src="./public/icons/logo.svg" alt="Logo" />
                 <p id="nomeCasal">{formData.name}</p>
               </div>
             </div>

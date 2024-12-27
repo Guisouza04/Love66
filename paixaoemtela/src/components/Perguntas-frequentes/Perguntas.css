@@ -1,12 +1,12 @@
 .container-perguntas-frequentes{
-    
-    background-color: #D7B988;
    margin: 50px;
     
 }
 
 .container-perguntas-frequentes h1{
     text-align: center;
+    font-size: 34px;
+    color: #5F6C7D;
 }
 
 .container-perguntas{
@@ -20,18 +20,19 @@
 .box-perguntas{
     width:  1000px ;
     padding: 20px;
-    background-color: #C1A26F;
     margin: 15px;
     box-shadow: 0 6px 8px #554832;
 }
     
 .box-perguntas h2{
     font-size: 16px;
+    color: #800F2F;
+    margin-bottom: 10px;
 }
 
 .box-perguntas p{
     font-size: 14px;
-    color: wheat;
+    color: #5F6C7D;
 }
 
 @media(max-width:768px){
@@ -46,7 +47,7 @@
         padding: 10px;
         margin: 15px;
         font-size: 14px;
-        height: 166px;
+        height: 196px;
     }
     .box-perguntas h2{
         padding-bottom: 5px;
