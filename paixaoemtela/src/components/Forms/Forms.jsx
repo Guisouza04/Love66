@@ -5,6 +5,7 @@ import Button from "../button/button";
 import Timer from "../Timer/timer.jsx";
 import HeartFloating from "../Heart/HeartFloating.jsx"; 
 import { useRef } from "react";
+import fotocamera from "../../assets/logo.camera.svg";
 
 function Forms() {
 
@@ -42,6 +43,7 @@ function Forms() {
     <div className="container-forms">
       <form onSubmit={handleSubmit}>
       <h1>Preencha aqui os dados especiais sobre seu namoro!</h1>
+      <h2 id="valor">De um presente por apenas R$14,99</h2>
         <label>
           <span>Nome do casal:</span>
           <input type="text" name="name" placeholder="Nome do casal" onChange={handleChange} />
@@ -61,7 +63,7 @@ function Forms() {
         <label>
           <span>Fotos do casal:</span>
           <label htmlFor="file-upload" className="file-label">
-              <img src="./public/icons/logo.camera.svg" alt="" />
+              <img src={fotocamera} alt="" />
           </label>
           <input type="file" name="file" id="file-upload" onChange={handleFile} />
         </label>
@@ -71,6 +73,7 @@ function Forms() {
         </label>
         <div className="Button-forms">
         <Button type="submit">Enviar</Button>
+        <h2 id="valor">De um presente por apenas R$14,99</h2>
         </div>
       </form>
       {/* Simulador ao vivo */}

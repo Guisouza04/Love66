@@ -1,5 +1,6 @@
 import './styles.css'
 import Button from '../button/button';
+import logo from "../../assets/logo.svg";
 
 const MenuPrincipal = ()=>{
     return(
@@ -12,7 +13,7 @@ const MenuPrincipal = ()=>{
                 <Button label="Quero criar meu site"/>
             </div>
             <div className='imagem-principal'>
-                <img src="./public/icons/logo.svg" alt="foto"/>
+                <img src={logo} alt="foto"/>
             </div>
         </div>
     )

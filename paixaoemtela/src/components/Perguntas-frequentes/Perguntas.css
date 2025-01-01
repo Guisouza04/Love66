@@ -38,6 +38,40 @@
     color: #5F6C7D;
 }
 
+
+/* sumario */
+
+details {
+    color: black
+
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  summary::-webkit-details-marker {
+    display: none; /* Remove o ícone padrão do navegador */
+  }
+
+  summary:after {
+    content: " ⬆"; /* Seta para cima */
+    float: right;
+    transition: transform 0.3s;
+  }
+
+  details[open] summary:after {
+    content: " ⬇"; /* Seta para baixo */
+  }
+
+  .details-content {
+    margin-top: 10px;
+    color: #cfcfcf;
+  }
+
+  /*fim*/
+
 @media(max-width:768px){
     .container-perguntas-frequentes{
         padding-top: 100px;
